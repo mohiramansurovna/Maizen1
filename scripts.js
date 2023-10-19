@@ -140,11 +140,15 @@ function check() {
     if (checklist.length === 9) {
         let checktext = document.getElementById('check');
         checktext.innerText = 'Correct';
+        const win=document.getElementById('yay');
+        win.play();
         checktext.style.color = 'rgb(22, 226, 131)';
         checklist=[];
     }else{
         let checktext = document.getElementById('check');
         checktext.innerText = 'Not yet';
+        const fail=document.getElementById('fail');
+        fail.play();
         checktext.style.color = 'rgb(99, 17, 17)';
         checklist=[];
     };
